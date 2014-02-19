@@ -8,8 +8,10 @@ gem 'omniauth-heroku'
 
 gem 'rest-client'
 
-gem 'pg'
-gem 'sqlite3'
+
+gem 'pg', group: :production
+gem 'sqlite3', group: [:development, :test]
+
 gem 'heroku'
 gem 'delayed_job_active_record'
 
