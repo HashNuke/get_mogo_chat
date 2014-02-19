@@ -14,10 +14,11 @@ Landing page for MogoChat, with a one-click Heroku installer.
 
 Set the following vars:
 
-* HEROKU_API_KEY (from Heroku account page)
-* HEROKU_OAUTH_ID
-* HEROKU_OAUTH_SECRET
-* Set `FORKABLE_IMAGE` to the name of the app that should be forked.
+* `HEROKU_DEPLOYER_EMAIL` - Heroku account that will be used for deployments
+* `HEROKU_API_KEY` - API key of the Heroku account that will be used for deployments
+* `HEROKU_OAUTH_ID`
+* `HEROKU_OAUTH_SECRET`
+* `FORKABLE_IMAGE` - the name of the app that should be forked
 
 Run `rake db:migrate`. And watch the installers batter the server :)
 
