@@ -7,7 +7,7 @@ class UserDeploy < ActiveRecord::Base
 
 
   def fork_app!
-    app_name = Heroku::commands.run("fork", ["--app", "mogochat-forkable-image"])
+    app_name = Heroku::commands.run("fork", ["--app", ENV["FORKABLE_IMAGE"]])
     self.app_name = app_name
     self.save
   end
