@@ -12,7 +12,7 @@ gem 'rest-client'
 gem 'pg', group: :production
 gem 'sqlite3', group: [:development, :test]
 
-gem 'heroku'
+gem 'heroku', github: "HashNuke/heroku", branch: "mogochat-deploy"
 gem 'delayed_job_active_record'
 
 

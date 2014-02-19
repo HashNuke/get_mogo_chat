@@ -1,3 +1,15 @@
+GIT
+  remote: git://github.com/HashNuke/heroku.git
+  revision: 4535062ac57a3569013a051415246d0cc9dc79e2
+  branch: mogochat-deploy
+  specs:
+    heroku (3.3.0)
+      heroku-api (~> 0.3.17)
+      launchy (>= 0.3.2)
+      netrc (~> 0.7.7)
+      rest-client (~> 1.6.1)
+      rubyzip
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -47,12 +59,6 @@ GEM
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     hashie (2.0.5)
-    heroku (3.3.0)
-      heroku-api (~> 0.3.17)
-      launchy (>= 0.3.2)
-      netrc (~> 0.7.7)
-      rest-client (~> 1.6.1)
-      rubyzip
     heroku-api (0.3.17)
       excon (~> 0.27)
       multi_json (~> 1.8.2)
@@ -157,7 +163,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   delayed_job_active_record
-  heroku
+  heroku!
   jbuilder (~> 1.2)
   jquery-rails
   omniauth

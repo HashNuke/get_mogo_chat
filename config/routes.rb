@@ -1,6 +1,5 @@
 GetMogoChat::Application.routes.draw do
 
-
   root "main#index"
   get  "installing" => "main#installing"
   get  "login" => "sessions#new"
