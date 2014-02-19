@@ -1,8 +1,7 @@
 class MainController < ApplicationController
 
-  helper :heroku_oauth_url
-
   def index
+    
   end
 
   private
