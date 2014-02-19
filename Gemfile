@@ -8,6 +8,7 @@ gem 'omniauth-heroku'
 
 gem 'rest-client'
 gem "daemons"
+gem 'rails_12factor'
 
 gem 'pg', group: :production
 gem 'sqlite3', group: [:development, :test]
