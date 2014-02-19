@@ -41,7 +41,6 @@ class UserDeploy < ActiveRecord::Base
     url = "https://api.heroku.com/account"
     account_details = JSON.parse(RestClient.get(url, headers))
     self.email = account_details["email"]
-    self.name = account_details["name"]
     self.platform_user_id = account_details["id"]
     self.save
   end
