@@ -7,6 +7,7 @@ class UserDeploy < ActiveRecord::Base
 
 
   def fork_app!
+    puts "Forking app for #{self.id}"
     app_name = Heroku::commands.run("fork", ["--app", ENV["FORKABLE_IMAGE"]])
     self.app_name = app_name
     self.save
@@ -14,6 +15,7 @@ class UserDeploy < ActiveRecord::Base
 
 
   def transfer_app!
+    puts "Transferring app for #{self.id}"
     headers = {
       "Authorization" => "Bearer #{oauth_token}",
       "Accept" => "application/vnd.heroku+json; version=3",
@@ -30,6 +32,7 @@ class UserDeploy < ActiveRecord::Base
 
 
   def get_account_details!
+    puts "Fetching user details for #{self.id}"
     headers = {
       "Authorization" => "Bearer #{oauth_token}",
       "Accept" => "application/vnd.heroku+json; version=3"
