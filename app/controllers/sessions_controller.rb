@@ -7,7 +7,8 @@ class SessionsController < ApplicationController
 
   def create
     access_token = request.env['omniauth.auth']['credentials']['token']
-    UserDeploy.create(oauth_token: access_token, platform: "heroku")
+    user_deploy = UserDeploy.create(oauth_token: access_token, platform: "heroku")
+    user_deploy.delay.deploy!
     redirect_to "/installing"
   end
 end

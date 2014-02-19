@@ -1,5 +1,5 @@
 class UserDeploy < ActiveRecord::Base
-  def deploy
+  def deploy!
     get_account_details! unless self.email
     fork_app! unless self.app_name
     transfer_app! unless self.deployed
