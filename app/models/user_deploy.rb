@@ -8,7 +8,7 @@ class UserDeploy < ActiveRecord::Base
 
   def fork_app!
     puts "Forking app for #{self.id}"
-    app_name = Heroku::commands.run("fork", ["--app", ENV["FORKABLE_IMAGE"]])
+    app_name = Heroku::Command.run("fork", ["--app", ENV["FORKABLE_IMAGE"]])
     self.app_name = app_name
     self.save
   end
