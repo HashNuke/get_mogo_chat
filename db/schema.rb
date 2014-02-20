@@ -11,36 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140220021202) do
-
-  create_table "delayed_jobs", force: true do |t|
-    t.integer  "priority",   default: 0, null: false
-    t.integer  "attempts",   default: 0, null: false
-    t.text     "handler",                null: false
-    t.text     "last_error"
-    t.datetime "run_at"
-    t.datetime "locked_at"
-    t.datetime "failed_at"
-    t.string   "locked_by"
-    t.string   "queue"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority"
-
-  create_table "user_deploys", force: true do |t|
-    t.text     "email"
-    t.text     "platform"
-    t.text     "platform_user_id"
-    t.text     "oauth_token"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "deployed",         default: false
-    t.text     "app_name"
-    t.text     "misc_data"
-    t.text     "status"
-    t.text     "transfer_id"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
