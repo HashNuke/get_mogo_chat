@@ -16,6 +16,7 @@ gem 'sqlite3', group: [:development, :test]
 gem 'heroku', github: "HashNuke/heroku", branch: "mogochat-deploy"
 gem 'delayed_job_active_record'
 
+gem 'bazaar'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
