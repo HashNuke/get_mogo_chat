@@ -3,18 +3,30 @@ class UserDeploy < ActiveRecord::Base
     get_account_details! unless self.email
     fork_app! unless self.app_name
     unless self.deployed
-      add_as_collaborator!
-      transfer_app!
-      remove_as_collaborator!
+      begin
+        add_as_collaborator!
+        transfer_app!
+        self.delay(run_at: 5.minutes.from_now).revoke_access_or_delete_app!
+      rescue SystemExit => e
+        raise "Could not deploy #{self.id}"
+      end
     end
   end
 
 
   def fork_app!
     puts "Forking app for #{self.id}"
-    app_name = Heroku::Command.run("fork", ["--app", ENV["FORKABLE_IMAGE"]])
+    app_name = Heroku::Command.run("fork", [Bazaar.heroku, "--app", ENV["FORKABLE_IMAGE"]])
     self.app_name = app_name
     self.save
+  end
+
+
+  def revoke_access_or_delete_app!
+    #TODO check if transfer is still pending
+    # If yes delete app
+    # If no then remove self access
+    self.remove_as_collaborator!
   end
 
 
