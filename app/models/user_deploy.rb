@@ -2,7 +2,7 @@ class UserDeploy < ActiveRecord::Base
   def deploy!
     get_account_details! unless self.email
     fork_app! unless self.app_name
-    unless self.deployed
+    unless self.status == "deployed"
       begin
         add_as_collaborator!
         transfer_app!
@@ -16,7 +16,7 @@ class UserDeploy < ActiveRecord::Base
 
   def fork_app!
     puts "Forking app for #{self.id}"
-    app_name = Heroku::Command.run("fork", [Bazaar.heroku, "--app", ENV["FORKABLE_IMAGE"]])
+    app_name = Heroku::Command.run("fork", ["mogochat-#{Bazaar.heroku}", "--app", ENV["FORKABLE_IMAGE"]])
     self.app_name = app_name
     self.save
   end
@@ -46,12 +46,17 @@ class UserDeploy < ActiveRecord::Base
       "Content-Type" => "application/json"
     }
 
+    puts headers.inspect
+
     params = {app: self.app_name, recipient: self.email}
     puts params.inspect
-    puts headers.inspect
-    response = RestClient.post("https://api.heroku.com/account/app-transfers", params.to_json, headers)
-    if JSON.parse(response)["state"] == "pending"
-      self.deployed = true
+
+    json_response = RestClient.post("https://api.heroku.com/account/app-transfers", params.to_json, headers)
+    response = JSON.parse(json_response)
+    puts response.inspect
+    if ["state"] == "pending"
+      self.status = "deployed"
+      self.transfer_id = response["id"]
       self.save
     end
   end
