@@ -3,20 +3,10 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
-gem 'omniauth'
-gem 'omniauth-heroku'
-
-gem 'rest-client'
-gem "daemons"
 gem 'rails_12factor'
 
 gem 'pg', group: :production
 gem 'sqlite3', group: [:development, :test]
-
-gem 'heroku', github: "HashNuke/heroku", branch: "mogochat-deploy"
-gem 'delayed_job_active_record'
-
-gem 'bazaar'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
