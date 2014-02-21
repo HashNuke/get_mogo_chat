@@ -1,15 +1,17 @@
 @import "bootstrap";
 
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
 .app-name {
   color: #E35D5C;
   font-weight: bold;
   font-size: 2em;
-  font-family: 'PT Sans', sans-serif;
 }
 
 .app-description {
   font-size: 1.3em;
-  font-family: 'PT Sans', sans-serif;
 }
 
 .nav {
@@ -17,7 +19,7 @@
 }
 
 .header-margins {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .contribution {
@@ -41,4 +43,25 @@
   }
 
   h4 {}
+}
+
+
+.footer {
+  margin-top: 1.5em;
+
+  .elixir-logo, .postgresql-logo {
+    height: 2em;
+  }
+
+  .emberjs-logo {
+    height: 3.5em;
+  }
+
+  .tool-name { font-size: 1.1em; }
+
+  h4 {
+    color: #E35D5C;
+    border-bottom: 0.1em solid #E35D5C;
+    padding-bottom: 0.5em;
+  }
 }
