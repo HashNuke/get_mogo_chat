@@ -7,3 +7,5 @@ Landing page for MogoChat.
 * Design
 * Google analytics
 * Contribution charts
+* Token Auth
+* Twitter cards
