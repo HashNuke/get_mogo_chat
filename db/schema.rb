@@ -11,6 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140221071239) do
+
+  create_table "contributors", force: true do |t|
+    t.text     "email"
+    t.text     "name"
+    t.text     "order_number"
+    t.text     "seller_id"
+    t.text     "product_id"
+    t.text     "product_permalink"
+    t.integer  "price"
+    t.boolean  "test"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

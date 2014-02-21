@@ -5,12 +5,14 @@ class MainController < ApplicationController
   def index
   end
 
-  def installing
+  def landing
+    #TODO fetch non-anonymous contributors
+    @top_contributors = Contributor.where("price > 0").order("price desc").limit(5)
   end
 
   def gumroad
     puts params.inspect
-    render :nothing => true
+    render nothing: true
   end
 
 end
