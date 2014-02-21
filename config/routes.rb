@@ -2,6 +2,7 @@ GetMogoChat::Application.routes.draw do
 
   root "main#index"
   get "landing" => "main#landing"
+  post "data/gumroad" => "main#gumroad"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
