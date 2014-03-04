@@ -59,6 +59,16 @@ body {
 
   .tool-name { font-size: 1.1em; }
 
+  .phoenix {
+    margin-top: 1em;
+    font-size: 1.3em;
+    white-space: nowrap;
+    a {
+      font-weight: bold;
+      color: #444;
+    }
+  }
+
   h4 {
     color: #E35D5C;
     border-bottom: 0.1em solid #E35D5C;
