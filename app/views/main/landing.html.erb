@@ -31,52 +31,48 @@
   </div>
 
   <div class="row">
-    <div class="col-md-7">Screenshot</div>
-    <div class="col-md-5">
+    <div class="col-md-8">
+      <%= image_tag "screenshot.png", style: "width: 100%" %>
+    </div>
+
+    <div class="col-md-4 footer">
 
       <div class="row">
         <div class="col-md-12">
+          <h4>Features</h4>
+          <ul>          
+            <li><b>Works on mobile devices ~!</b></li>
+            <li>Easy to install (simple copy-paste for Heroku)</li>
+            <li>Multiple rooms</li>
+            <li>Sound notifications</li>
+            <li>Comes with an API</li>
+          </ul>
+        </div>
+      </div>
 
-          <div class="row">
-            <div class="col-md-12">
-              <p class="social-buttons">
-                <a href="https://twitter.com/share"
-                   data-count="none"
-                   data-size="large"
-                   data-text="MogoChat - opensource team chat application http://getmogochat.com by @HashNuke"
-                   class="twitter-share-button" data-lang="en">Tweet</a>
+      <div class="row">
+        <a href="https://twitter.com/share"
+           data-count="none"
+           data-size="large"
+           data-text="MogoChat - opensource team chat application http://getmogochat.com by @HashNuke"
+           class="twitter-share-button" data-lang="en">Tweet</a>
+      </div>
 
-                <iframe
-                  src="http://ghbtns.com/github-btn.html?user=HashNuke&repo=mogo-chat&type=watch&count=true&size=large"
-                  height="30"
-                  width="170"
-                  frameborder="0"
-                  scrolling="0"
-                  style="width:170px; height: 30px;" allowTransparency="true"></iframe>
-              </p>
-            </div>
-          </div>
-
-
-          <div class="row contribution">
-            <div class="col-md-12">
-              <h3>Buy me noodles</h3>
-              <a href="https://gum.co/demo?wanted=true" class="gumroad-button">Donate</a>
-            </div>
-          </div>
-
+      <div class="row contribution">
+        <div class="col-md-12">
+          <h4>Buy me noodles <a href="https://gum.co/demo?wanted=true" class="gumroad-button">Donate</a></h4>
         </div>
       </div>
 
     </div>
   </div>
 
+
   <div class="row footer">
     <div class="col-md-4">
       <p>
         <h4>Looking for a developer?</h4>
-        <b>Akash Manohar</b> (akash@akash.im)<br/>
-        <a href="http://github.com/HashNuke">Github</a>, <a href="http://akash.im">Blog</a><br/>
+        <b>Akash Manohar</b> (akash@akash.im, <a href="http://github.com/HashNuke">Github</a>, <a href="http://akash.im">Blog</a>)<br/>
         Ruby, Ruby on Rails, Elixir, CoffeeScript, Ember.js...
       </p>
     </div>
@@ -93,6 +89,7 @@
         <div class="col-md-2">
           <%= image_tag "postgresql-logo.png", class: "postgresql-logo" %> <span class="tool-name">PostgreSQL</span>
         </div>
+
         <div class="col-md-3 phoenix">
           <a href="https://github.com/phoenixframework/phoenix">Phoenix Framework</a>
         </div>
