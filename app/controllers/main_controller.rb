@@ -2,7 +2,7 @@ class MainController < ApplicationController
 
   protect_from_forgery except: :gumroad
 
-  caches_page :landing, expires_in: 60.seconds
+  # caches_page :landing, expires_in: 60.seconds
 
   def landing
     # #TODO fetch non-anonymous contributors

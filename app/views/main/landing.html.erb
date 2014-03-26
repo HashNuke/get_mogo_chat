@@ -3,17 +3,20 @@
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <% end %>
 
+<a href="https://github.com/HashNuke/mogo-chat"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
 <div class="container">
+
   <div class="row header-margins">
-    <div class="col-md-4">
-      <div class="row">
-        <div class="col-md-12 app-name">Mogo Chat</div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 app-description">opensource team chat application</div>
-      </div>
-    </div>
-    <div class="col-md-8 nav">
+    <div class="col-md-12 app-name">Mogo Chat</div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 app-description">opensource team chat application</div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 nav">
       <ul class="list-inline">
         <li>
           <a href="https://github.com/HashNuke/mogo-chat/blob/master/docs/install-heroku.md">Install on Heroku</a>
@@ -30,24 +33,40 @@
         <li>
           <a href="https://github.com/HashNuke/mogo-chat/blob/master/docs/api.md">API</a>
         </li>
+      </ul>
+    </div>
+  </div>
 
-        <li>
+  <div class="row">
+    <div class="col-md-12" style="text-align: center">
+      <%= image_tag "screenshot.png" %>
+    </div>
+
+    <div class="col-md-12 social">
+      <ul class="list-inline">
+        <li class="twitter">
           <a href="https://twitter.com/share"
              data-count="none"
              data-size="large"
              data-text="MogoChat - opensource team chat application http://getmogochat.com by @HashNuke"
              class="twitter-share-button" data-lang="en">Tweet</a>
         </li>
+
+        <li>
+          <a href="https://gum.co/mogochat?wanted=true" class="gumroad-button">Donate</a>
+        </li>
+
+        <li class="gittip">
+          <script data-gittip-username="HashNuke"
+            data-gittip-widget="button"
+            src="//gttp.co/v1.js"></script>
+        </li>
       </ul>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8">
-      <%= image_tag "screenshot.png", style: "width: 100%" %>
-    </div>
-
-    <div class="col-md-4 footer">
+    <div class="col-md-12 footer">
 
       <div class="row">
         <div class="col-md-12">
@@ -62,26 +81,6 @@
             <li>Comes with an API</li>
             <li>Licensed under the MIT License</li>
           </ul>
-        </div>
-      </div>
-
-  
-      <div class="row contribution">
-        <div class="col-md-12">
-          <h4>
-            Buy me noodles
-          </h4>
-
-          <p>
-            <a href="https://gum.co/mogochat?wanted=true" class="gumroad-button">Donate</a>
-            or
-            <script data-gittip-username="HashNuke"
-              data-gittip-widget="button"
-              src="//gttp.co/v1.js"></script>
-          </p>
-          <p>
-
-          </p>
         </div>
       </div>
 

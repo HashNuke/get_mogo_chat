@@ -8,18 +8,17 @@ body {
   color: #E35D5C;
   font-weight: bold;
   font-size: 2em;
+  text-align: center;
 }
 
 .app-description {
   font-size: 1.3em;
+  text-align: center;
 }
 
 .nav {
   margin-top: 1.5em;
-
-  iframe {
-    margin-bottom: -0.5em !important;
-  }
+  text-align: center;
 
   a {
     font-size: 1.2em;
@@ -30,8 +29,26 @@ body {
 }
 
 .contribution {
-  iframe {
-    margin-bottom: -0.35em !important;
+}
+
+.social {
+  text-align: center;
+
+  .twitter {
+    iframe {
+      margin-bottom: -0.6em !important;
+    }
+  }
+
+  .gittip {
+    iframe {
+      margin-bottom: -0.35em !important;
+    }
+  }
+
+  li {
+    margin-right: 1em;
+    margin-left: 1em;
   }
 }
 
