@@ -2,6 +2,8 @@ class MainController < ApplicationController
 
   protect_from_forgery except: :gumroad
 
+  caches_page :landing, expires_in: 60.seconds
+
   def index
   end
 
