@@ -17,6 +17,10 @@ body {
 .nav {
   margin-top: 1.5em;
 
+  iframe {
+    margin-bottom: -0.5em !important;
+  }
+
   a {
     font-size: 1.2em;
     font-weight: bold;
@@ -27,23 +31,6 @@ body {
 
 .header-margins {
   margin-top: 0.5em;
-}
-
-.contribution {
-  background: #FFF9DC;
-  border: 0.1em solid #F0B850;
-  border-radius: 0.2em;
-  margin-bottom: 2em;
-
-  .social-buttons {
-    margin-top: 1em;
-  }
-
-  h4 {
-    color: #E35D5C;
-    text-decoration: none;
-    border-bottom: none !important;
-  }
 }
 
 
