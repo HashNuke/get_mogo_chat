@@ -28,8 +28,6 @@ body {
   }
 }
 
-.contribution {
-}
 
 .social {
   text-align: center;
@@ -93,6 +91,21 @@ body {
     color: #E35D5C;
     border-bottom: 0.1em solid #E35D5C;
     padding-bottom: 0.5em;
+  }
+}
+
+.features {
+  text-align: center;
+
+  img {
+    box-shadow: 0em 0em 0.3em 0.1em #CCC;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-top: 1em;
+    font-weight: bold;
+    color: #666;
   }
 }
 

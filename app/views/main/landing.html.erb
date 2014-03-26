@@ -48,7 +48,8 @@
           <a href="https://twitter.com/share"
              data-count="none"
              data-size="large"
-             data-text="MogoChat - opensource team chat application http://getmogochat.com by @HashNuke"
+             data-text="Mogo Chat - #opensource team chat app http://getmogochat.com, written in #Elixir & #Emberjs by @HashNuke"
+             data-related="HashNuke"
              class="twitter-share-button" data-lang="en">Tweet</a>
         </li>
 
@@ -69,23 +70,33 @@
     <div class="col-md-12">
 
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 features">
           <h2 class="section-title">Features</h2>
-          <ul>          
-            <li><b>Works on mobile devices ~!</b></li>
-            <li>Easy to install on Heroku</li>
-            <li>Multiple rooms</li>
-            <li>Sound notifications</li>
-            <li>Code snippets</li>
-            <li><i>/me</i> status messages</li>
-          </ul>
+
+          <div class="col-md-4">
+            <%= image_tag "feature-mobile.png" %>
+            <p>Works on mobile devices</p>
+          </div>
+
+          <div class="col-md-4">
+            <%= image_tag "feature-snippets.png" %>
+            <p>Supports code snippets and IRC-style <i>/me</i> messages</p>
+          </div>
+
+          <div class="col-md-4">
+            <%= image_tag "feature-notifications.png" %>
+            <p>Visual and sound notifications for messages</p>
+          </div>
+
         </div>
       </div>
     </div>
 
     <div class="col-md-12">
+      <br/>
+      <br/>
       <p style="text-align:center">
-        <b>Licensed under the MIT License and also comes with an <a href="https://github.com/HashNuke/mogo-chat/blob/master/docs/api.md">API</a></b>
+        ...and comes with an <a href="https://github.com/HashNuke/mogo-chat/blob/master/docs/api.md">API</a>. All of this licensed under the MIT License.
       </p>
     </div>
   </div>
