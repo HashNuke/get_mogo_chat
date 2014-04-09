@@ -1,0 +1,113 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.app-name {
+  color: #E35D5C;
+  font-weight: bold;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.app-description {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.nav {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.nav a {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+
+
+.social {
+  text-align: center;
+}
+
+.social .twitter iframe {
+  margin-bottom: -0.6em !important;
+}
+
+.social .gittip iframe {
+  margin-bottom: -0.35em !important;
+}
+
+.social li {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.header-margins {
+  margin-top: 0.5em;
+}
+
+
+.section-title {
+  border-top: 1px solid #CCC;
+  padding-top: 1em;
+  color: #E35D5C;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.footer {
+  margin-top: 1.5em;
+}
+
+
+.footer .elixir-logo, .postgresql-logo {
+  height: 2em;
+}
+
+.footer .emberjs-logo {
+  height: 3.5em;
+}
+
+.footer .tool-name { font-size: 1.1em; }
+
+.footer .phoenix {
+  margin-top: 1em;
+  font-size: 1.3em;
+  white-space: nowrap;
+}
+
+.footer .phoenix   a {
+  font-weight: bold;
+  color: #444;
+}
+
+.footer h4 {
+  color: #E35D5C;
+  border-bottom: 0.1em solid #E35D5C;
+  padding-bottom: 0.5em;
+}
+
+.features {
+  text-align: center;
+}
+
+.features img {
+  box-shadow: 0em 0em 0.3em 0.1em #CCC;
+}
+
+
+.features p {
+  font-size: 1.2em;
+  margin-top: 1em;
+  font-weight: bold;
+  color: #666;
+}
+
+
+h4 {
+  color: #E35D5C;
+  border-bottom: 0.1em solid #E35D5C;
+}
