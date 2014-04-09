@@ -1,1 +1,1 @@
-web: MIX_ENV=prod mix phoenix.start
+web: mix phoenix.start
